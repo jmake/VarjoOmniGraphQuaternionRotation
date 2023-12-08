@@ -1,0 +1,52 @@
+{
+    "EulerRotation": {
+        "version": 1,
+        "description": "Rotates a quaternion around an angle of the given Euler angles",
+        "language": "Python",
+        "metadata": {
+            "uiName": "EulerRotation"
+        },
+        "inputs": {
+            "euler": {
+                "type": "vectorf[3]",
+                "description": "Euler angles",
+                "default": [
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                "metadata": {
+                    "uiName": "euler"
+                }
+            },
+            "quaternion": {
+                "type": "quatf[4]",
+                "description": "Quaternion to be rotated",
+                "metadata": {
+                    "uiName": "quaternion"
+                },
+                "default": [
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0
+                ]
+            }
+        },
+        "outputs": {
+            "rotated": {
+                "type": "quatf[4]",
+                "description": "Rotated quaternion ",
+                "metadata": {
+                    "uiName": "rotated"
+                },
+                "default": [
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0
+                ]
+            }
+        }
+    }
+}

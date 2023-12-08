@@ -1,0 +1,34 @@
+#usda 1.0
+(
+    doc ="""Generated from node description file eulerRotation.ogn
+Contains templates for node types found in that file."""
+)
+
+def OmniGraph "TestGraph"
+{
+    token evaluator:type = "push"
+    int2 fileFormatVersion = (1, 3)
+    token flatCacheBacking = "Shared"
+    token pipelineStage = "pipelineStageSimulation"
+
+    def OmniGraphNode "Template_omni_varjo_quaternions_EulerRotation" (
+        docs="""Rotates a quaternion around an angle of the given Euler angles"""
+    )
+    {
+        token node:type = "omni.varjo.quaternions.EulerRotation"
+        int node:typeVersion = 1
+
+        # 2 attributes
+        custom vector3f inputs:euler = (0.0, 0.0, 0.0) (
+            docs="""Euler angles"""
+        )
+        custom quatf inputs:quaternion = (0.0, 0.0, 0.0, 0.0) (
+            docs="""Quaternion to be rotated"""
+        )
+
+        # 1 attribute
+        custom quatf outputs:rotated = (0.0, 0.0, 0.0, 0.0) (
+            docs="""Rotated quaternion """
+        )
+    }
+}
