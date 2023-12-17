@@ -4,20 +4,20 @@
 version = "0.1.0"
 
 # Lists people or organizations that are considered the "authors" of the package.
-authors = []
+authors = [spicytechs]
 
 # The title and description fields are primarly for displaying extension info in UI
-title = "Omniverse Graph Extension Example"
-description="Example extension for OmniGraph nodes."
+title = "Varjo OmniGraph Quaternion Rotation"
+description="Rotates a quaternion around an angle of the given Euler angles"
 
 # Path (relative to the root) or content of readme markdown file for UI.
-readme  = "docs/README.md"
+readme  = "README.md"
 
 # URL of the extension source repository.
-repository="https://gitlab-master.nvidia.com/omniverse/kit-extensions/example"
+repository="https://github.com/jmake/VarjoOmniGraphQuaternionRotation.git"
 
 # One of categories for UI.
-category = "Example"
+category = "Create"
 
 # Keywords for the extension
 keywords = ["kit", "omnigraph"]
@@ -38,3 +38,5 @@ name = "omni.varjo.quaternions"
 # Additional python module with tests, to make them discoverable by test system.
 [[python.module]]
 name = "omni.varjo.quaternions.ogn.tests"
+
+
